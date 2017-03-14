@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:id="@+id/mainContainer"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="29dp"
+        android:layout_height="match_parent"
+        android:id="@+id/leftSpace" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/midContainer"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:id="@+id/item_food"
+            android:layout_height="90dp">
+
+            <TextView
+                android:text="Food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/food"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:id="@+id/item_social"
+            android:layout_height="90dp">
+
+            <TextView
+                android:text="Social"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/social"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:id="@+id/item_other"
+            android:layout_height="90dp">
+
+            <TextView
+                android:text="Other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/other"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/space" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttons">
+
+            <Button
+                android:text="weekly"
+                android:layout_height="wrap_content"
+                android:id="@+id/weekly"
+                android:textSize="12sp"
+                android:layout_width="85dp" />
+
+            <Button
+                android:text="monthly"
+                android:layout_height="wrap_content"
+                android:id="@+id/monthly"
+                android:textSize="12sp"
+                android:layout_width="85dp" />
+
+            <Button
+                android:text="semester"
+                android:layout_height="wrap_content"
+                android:id="@+id/semester"
+                android:textSize="12sp"
+                android:layout_width="85dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="37dp"
+        android:layout_height="match_parent"
+        android:id="@+id/rightSpace" />
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:id="@+id/mainContainer"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="29dp"
+        android:layout_height="match_parent"
+        android:id="@+id/leftSpace"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="259dp"
+        android:layout_height="match_parent"
+        android:id="@+id/midContainer"
+        android:weightSum="1"
+        android:layout_weight="1.01">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:id="@+id/pie_chart"
+            android:layout_height="234dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            android:id="@+id/space"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/buttons"
+            android:layout_marginLeft="30dp">
+
+            <Button
+                android:text="weekly"
+                android:layout_height="wrap_content"
+                android:id="@+id/weekly"
+                android:textSize="12sp"
+                android:layout_width="85dp" />
+
+            <Button
+                android:text="monthly"
+                android:layout_height="wrap_content"
+                android:id="@+id/mo"
+                android:textSize="12sp"
+                android:layout_width="85dp" />
+
+            <Button
+                android:text="semester"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:textSize="12sp"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="29dp"
+        android:layout_height="match_parent"
+        android:id="@+id/rightSpace"></LinearLayout>
+</LinearLayout>

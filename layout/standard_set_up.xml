@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainContainer">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:id="@+id/topSpace"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:id="@+id/space">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="22dp"
+            android:layout_height="match_parent"
+            android:id="@+id/lSpace"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="235dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.09"
+            android:id="@+id/inputContainer">
+
+            <TextView
+                android:text="Rent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rent"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="￡"
+                android:ems="10"
+                android:id="@+id/editRent"
+                android:background="@android:drawable/editbox_background"
+                android:hint="￡"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:inputType="number" />
+
+            <TextView
+                android:text="Food and Utilities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/food"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="￡"
+                android:ems="10"
+                android:id="@+id/editFood"
+                android:background="@android:drawable/editbox_background"
+                android:hint="￡"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:inputType="number" />
+
+            <TextView
+                android:text="Social"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/social"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="￡"
+                android:ems="10"
+                android:id="@+id/editSocial"
+                android:background="@android:drawable/editbox_background"
+                android:hint="￡"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:inputType="number" />
+
+            <TextView
+                android:text="Other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/other"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="￡"
+                android:ems="10"
+                android:id="@+id/editOther"
+                android:background="@android:drawable/editbox_background"
+                android:hint="￡"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:inputType="number" />
+
+            <TextView
+                android:text="Maintenance Loan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/loan"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="￡"
+                android:ems="10"
+                android:id="@+id/editLoan"
+                android:background="@android:drawable/editbox_background"
+                android:hint="￡"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:inputType="number" />
+
+            <TextView
+                android:text="Family/ Part Time Work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/family"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="￡"
+                android:ems="10"
+                android:id="@+id/editFamily"
+                android:background="@android:drawable/editbox_background"
+                android:hint="￡"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:inputType="number" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/buttonContainer">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="132dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/space"
+                    android:layout_weight="0.32"></LinearLayout>
+
+                <Button
+                    android:text="Continue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/continue"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:id="@+id/rSpace"></LinearLayout>
+    </LinearLayout>
+</LinearLayout>

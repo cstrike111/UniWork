@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:layout_width="28dp"
+        android:id="@+id/leftSpace"></LinearLayout>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_weight="0.98"
+        android:weightSum="1"
+        android:layout_width="240dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="0.71"
+            android:layout_height="200dp">
+
+            <TextView
+                android:text="User Name:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/usr_text" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:ems="10"
+                android:id="@+id/userName"
+                android:inputType="text"
+                style="@android:drawable/editbox_background" />
+
+            <TextView
+                android:text="Enter the Password:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pw_text"
+                android:layout_marginTop="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editText3"
+                style="@android:drawable/editbox_background" />
+
+            <TextView
+                android:text="Enter the Password Again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editText4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="54dp"
+            android:layout_weight="0.11"
+            android:weightSum="1"
+            android:layout_width="240dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_weight="0.23"
+                android:layout_width="80dp"></LinearLayout>
+
+            <Button
+                android:text="Done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button3"
+                android:layout_weight="0.24" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        android:layout_width="28dp"></LinearLayout>
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainContainer">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="55dp"
+        android:id="@+id/inputName">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:id="@+id/container1">
+
+            <TextView
+                android:text="Name"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:id="@+id/nameText"
+                android:textSize="24sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:ems="10"
+                android:id="@+id/inputName"
+                android:background="@android:drawable/editbox_background"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="344dp"
+        android:id="@+id/buttonContainer">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:id="@+id/container2">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/lSpace"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="166dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.00"
+                android:weightSum="1"
+                android:id="@+id/mSpace">
+
+                <TextView
+                    android:text="Set-up type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/setupText"
+                    android:textSize="24sp"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:text="Express"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/expressButton"
+                    android:layout_weight="0.10" />
+
+                <Button
+                    android:text="Standard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/standardButton"
+                    android:layout_weight="0.10" />
+
+                <Button
+                    android:text="Advanced"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/advancedButton"
+                    android:layout_weight="0.10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:id="@+id/rSpace"></LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
